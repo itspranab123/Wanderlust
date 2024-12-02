@@ -1,0 +1,192 @@
+body {
+    /* background-color: blanchedalmond !important; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+/* // <weight>: Use a value from 200 to 800 */
+
+/* .plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+.navbar {
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.fa-compass {
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+
+
+.nav-link {
+    color: #222 !important;
+    font-weight: 500 !important;
+}
+
+
+/* Footer Style */
+
+.f-info-link a {
+    text-decoration: none;
+    color: #222;
+}
+
+
+.f-info-link a:hover {
+    text-decoration: underline;
+}
+
+/* .f-info-link,
+.f-info-social,
+.f-info-brand {
+    width: 33.33%;
+    vertical-align: middle;
+} */
+
+.f-info-social {
+    font-size: 1.2rem;
+}
+
+.f-info-social i {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.f-info {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+
+/* cards  */
+
+.listing-card {
+    padding-top: 0.7rem;
+    border: none !important;
+    margin-bottom: 0.5rem;
+    object-fit: cover !important;
+}
+
+.img {
+    height: 18rem !important;
+    width: 20rem !important;
+    width: 100% !important;
+    border-radius: 0.7rem !important;
+}
+
+.btn1 {
+    float: right;
+    margin-top: -10px;
+    margin-right: 50rem;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: #222;
+}
+
+/* 
+.card:hover {
+    background-color: #ebebeb;
+    border-radius: 0.7rem !important;
+
+    img {
+        height: 18.5rem !important;
+    }
+} */
+
+
+.effect {
+    opacity: 0;
+}
+
+.effect:hover {
+    opacity: 0.3;
+    background-color: white;
+}
+
+i {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* new linsying */
+
+.btn-style {
+    border-radius: 0.5rem;
+    /* height: 2rem; */
+    border: none !important;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    background-color: #fe424d !important;
+    color: #ebebeb;
+    font-size: large;
+}
+
+
+/* edit page */
+
+.edit-img {
+    height: 50vh !important;
+    width: 100vh !important;
+    border-radius: 1rem !important;
+    margin-left: 16rem;
+}
+
+/* show page */
+.show-img {
+    height: 50vh !important;
+    width: 100vh !important;
+    border-radius: 1rem !important;
+    margin-left: 2rem;
+
+}
+
+/* show page */
+.show-btn {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.edit {
+    margin-right: 1rem;
+    width: 5rem;
+}
+
+.textarea {
+    height: 10rem;
+}
+
+.delicon {
+    float: right;
+}
+
+.deletebtn {
+    height: 1rem;
+}
+
+.rebtn {
+    width: 2.5rem !important;
+    height: 1.5rem !important;
+    float: right;
+}

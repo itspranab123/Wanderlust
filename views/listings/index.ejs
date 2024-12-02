@@ -1,0 +1,103 @@
+<% layout('/layouts/boilerplate') -%>
+    <style>
+        #filters {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .filter {
+            text-align: center;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            opacity: 0.7;
+        }
+
+        .filter:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+
+        .filter p {
+            font-size: 0.8rem;
+        }
+    </style>
+
+    <div id="filters">
+        <div class="filter">
+            <div><i class="fa-solid fa-fire"></i></div>
+            <p>Tranding</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-bed"></i></div>
+            <p>Rooms</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-city"></i></div>
+            <p>Top cities</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-tree"></i></div>
+            <p>Island</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-house-chimney-window"></i></div>
+            <p>Tiny homes</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-brands fa-fort-awesome"></i></div>
+            <p>Castles</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-water"></i></div>
+            <p>Lakefront</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-money-bill-wheat"></i></div>
+            <p>Farms</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-person-swimming"></i></div>
+            <p>Amazing pools</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-tents"></i></div>
+            <p>Camping</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-square-parking"></i></i></div>
+            <p>Nastional Parks</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-person-skiing"></i></div>
+            <p>Mountains</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-ferry"></i></div>
+            <p>Houseboats</p>
+        </div>
+        <div class="filter">
+            <div><i class="fa-solid fa-umbrella-beach"></i></div>
+            <p>Beach</p>
+        </div>
+    </div>
+
+    <div class="row row-cols-lg-4 row-cols-md-2 ">
+        <% for(let list of alllistings){%>
+            <div class="card listing-card">
+                <a href="/listings/<%= list._id %>" class="listing-link">
+                    <img src="<%= list.image.url %>" class="img card-img-top" alt="image Loading">
+                    <div class="card-img-overlay effect"></div>
+                    <!-- <div class="fev"> <i class="fa-regular fa-heart"></i></div> -->
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b>
+                                <%= list.title %>
+                            </b><br>
+                            <!-- <%= list.description %> <br> -->
+                            &#x20b9; <%= list.price.toLocaleString("en-IN") %>/night
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <%}%>
+    </div>
